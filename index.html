@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moch Arisandi Jayanto_192410103064</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/tabel.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <!--Header-->
+	<header>
+		<div class="container">
+			<h1><a href="#">Jaya</a></h1>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Help!</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="Judul">
+        <div class="container">
+            <h1>Form Pendaftaran</h1>
+
+        </div>
+    </section>
+
+    <div>
+        <table>
+            <form action="#" method="POST">
+                <tr>
+                    <td>Nama Lengkap :</td>
+                    <td>
+                        <input type="text" name="nama_depan" placeholder="Nama Depan" required>
+                    </td>
+                    <td><input type="text" name="nama_belakang" placeholder="Nama Belakang" required></td>
+                </tr>
+                <tr>
+                    <td>Tempat, Tanggal Lahir :</td>
+                    <td><input type="text" name="Tempat" placeholder="Tempat" required></td>
+                    <td>
+                        <input type="date" placeholder="Tanggal Lahir" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NIK :</td>
+                    <td><input type="number" name="NIK" placeholder="Nomor Induk Keluarga" required></td>
+                </tr>
+                <tr>
+                    <td>Nomor Telepon :</td>
+                    <td> <input type="number" name="Nomor" placeholder="Nomor Telepon 0812345678" minlength="12" required></td>
+                </tr>
+                <tr>
+                    <td>Alamat :</td>
+                    <td><input type="text" name="Alamat" placeholder="Alamat" required></td>
+                </tr>
+                <tr>
+                    <td>E-mail :</td>
+                    <td><input type="email" name="email" placeholder="E-mail" required></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin :</td>
+                    <td>
+                        <input type="radio" name="jenis_kelamin" placeholder="Laki-laki" value="Laki-laki">
+                        <label>Laki-laki</label>
+                        <input type="radio" name="jenis_kelamin" placeholder="Perempuan" value="Perempuan">
+                        <label>Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Username :</td>
+                    <td><input type="text" name="username" placeholder="Username" required></td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="password" name="Password" placeholder="Password" minlength="8" required></td>
+                </tr>
+            </form> 
+        </table> 
+    </div> 
+    
+    <div>
+        <input class="kirim" type="submit" value="Kirim">
+        <input class="reset" type="Reset">
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <small>Copyright &copy; 2020 - Moch Arisandi jayanto</small>
+        </div>
+    </footer>
+</body>
+</html>
