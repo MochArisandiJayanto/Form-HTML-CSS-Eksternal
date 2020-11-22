@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moch Arisandi Jayanto_192410103064</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/tabel.js"></script>
+    <script src="javascript_tabel.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
@@ -32,19 +32,19 @@
 
     <div>
         <table>
-            <form action="#" method="POST">
+            <form name="biodata" action="#" method="POST">
                 <tr>
                     <td>Nama Lengkap :</td>
                     <td>
-                        <input type="text" name="nama_depan" placeholder="Nama Depan" required>
+                        <input type="text" name="nama_depan" placeholder="Nama_Depan" required>
                     </td>
-                    <td><input type="text" name="nama_belakang" placeholder="Nama Belakang" required></td>
+                    <td><input type="text" name="nama_belakang" placeholder="Nama_Belakang" required></td>
                 </tr>
                 <tr>
                     <td>Tempat, Tanggal Lahir :</td>
-                    <td><input type="text" name="Tempat" placeholder="Tempat" required></td>
+                    <td><input type="text" name="tempat" placeholder="Tempat" required></td>
                     <td>
-                        <input type="date" placeholder="Tanggal Lahir" required>
+                        <input type="date" name="tanggal" placeholder="Tanggal Lahir" required>
                     </td>
                 </tr>
                 <tr>
@@ -85,9 +85,26 @@
     </div> 
     
     <div>
-        <input class="kirim" type="submit" value="Kirim">
+        <input class="kirim" type="button" onclick="terimainput()" value="Kirim">
         <input class="reset" type="Reset">
     </div>
+
+
+    <table border="1" id="tabelinput">
+        <tr>
+            <td>NAMA DEPAN</td>
+            <td>NAMA BELAKANG</td>
+            <td>TEMPAT LAHIR</td>
+            <td>TANGGAL LAHIR</td>
+            <td>NIK</td>
+            <td>NOMOR</td>
+            <td>ALAMAT</td>
+            <td>E-MAIL</td>
+            <td>JENIS KELAMIN</td>
+            <td>USERNAME</td>
+            <td>PASSWORD</td>
+        </tr>
+    </table>
 
     <!--Footer-->
     <footer>
